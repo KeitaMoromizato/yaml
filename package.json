@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "Keita Moromizato <keita.moromi@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^3.8.1"
+  }
 }
