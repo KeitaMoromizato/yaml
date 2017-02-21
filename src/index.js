@@ -3,14 +3,18 @@ import fs from 'fs';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 
+import pdf from 'html-pdf';
+
 import Resume from './resume';
 
 module.exports = function(yamlFile) {
   try {
     const doc = yaml.safeLoad(fs.readFileSync(yamlFile, 'utf8'));
-    const str = renderToString(<Resume {...doc.resume} />);
+    const html = renderToString(<Resume {...doc.resume} />);
 
-    console.log(str);
+    pdf.create(html).toFile('./resume.pdf', (err, data) => {
+      console.log(data.filename);
+    });
   } catch (e) {
     console.log(e);
   }
