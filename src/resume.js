@@ -1,7 +1,7 @@
 import React from 'react';
 
 const style = {
-  color: 'red'
+  color: 'red',
 };
 
 export default props => (
