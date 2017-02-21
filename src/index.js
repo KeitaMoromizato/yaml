@@ -3,7 +3,7 @@ import fs from 'fs';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 
-import pdf from 'html-pdf';
+//import pdf from 'html-pdf';
 
 import Resume from './resume';
 
@@ -12,9 +12,13 @@ module.exports = function(yamlFile) {
     const doc = yaml.safeLoad(fs.readFileSync(yamlFile, 'utf8'));
     const html = renderToString(<Resume {...doc.resume} />);
 
-    pdf.create(html).toFile('./resume.pdf', (err, data) => {
+    return html;
+
+/*
+    pdf.create(html).toFile(outFile, (err, data) => {
       console.log(data.filename);
     });
+*/
   } catch (e) {
     console.log(e);
   }
