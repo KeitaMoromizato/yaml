@@ -1,11 +1,13 @@
 import React from 'react';
 
-const style = {
-  color: 'red',
+const pageStyle = {
+  width: `${257 * 3}px`,
+  height: `${182 * 3}px`,
+  border: '1px solid #888',
 };
 
 export default props => (
-  <div>
-    <h1 style={style}>{props.title}</h1>
+  <div style={pageStyle}>
+    <h1 >{props.title}</h1>
   </div>
 );

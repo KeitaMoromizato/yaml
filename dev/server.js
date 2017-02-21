@@ -5,7 +5,7 @@ const yaml2Component = require('../lib');
 const PORT = 3000 || process.env.PORT;
 
 http.createServer((req, res) => {
-  const html = yaml2Component('./test.yml');
+  const html = yaml2Component('./dev/test.yml');
 
   res.writeHead(200, { 'Content-Type': 'text/html' });
   res.end(html);
