@@ -3,9 +3,9 @@ import React from 'react';
 import { formStyle, formTextStyle, formWrapperStyle, formLabelStyle } from '../styles';
 
 const dateOfBirthFormStyle = Object.assign({}, formWrapperStyle, {
-  width: '295px',
-  float: 'left',
   height: '48px',
+  flexGrow: 2,
+  display: 'inline-block',
 });
 
 const culcOld = (birth) => {

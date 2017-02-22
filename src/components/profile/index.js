@@ -3,19 +3,23 @@ import React from 'react';
 import Name from './name';
 import DateOfBirth from './dateOfBirth';
 import Gender from './gender';
+import Picture from './picture';
 
 const wrapperStyle = {
   width: '100%',
 };
 
+const flexContainerStyle = {
+  display: 'flex',
+};
+
 const leftStyle = {
-  width: `${(120 * 3) - 2}px`,
+  flexGrow: 2,
   display: 'inline-block',
 };
 
 const rightStyle = {
-  width: `${120 - 2}px`,
-  border: '1px solid #888',
+  flexGrow: 1,
   display: 'inline-block',
 };
 
@@ -38,18 +42,23 @@ const dateString = (d => `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate
 
 export default props => (
   <div style={wrapperStyle}>
-    <div style={leftStyle}>
-      <h1 style={titleStyle}>履歴書</h1>
-      <p style={dateStyle}>{dateString} 現在</p>
+    <div style={flexContainerStyle}>
+      <div style={leftStyle}>
+        <div>
+          <h1 style={titleStyle}>履歴書</h1>
+          <p style={dateStyle}>{dateString} 現在</p>
+        </div>
 
-      <Name {...props.name} />
-      <div>
-        <DateOfBirth {...props.dateOfBirth} />
-        <Gender gender={props.gender} />
+        <Name {...props.name} />
+        <div style={flexContainerStyle}>
+          <DateOfBirth {...props.dateOfBirth} />
+          <Gender gender={props.gender} />
+        </div>
       </div>
-    </div>
 
-    <div style={rightStyle}>
+      <div style={rightStyle}>
+        <Picture />
+      </div>
     </div>
   </div>
 );
