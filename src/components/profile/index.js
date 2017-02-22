@@ -10,16 +10,16 @@ const wrapperStyle = {
 };
 
 const flexContainerStyle = {
-  display: 'flex',
+  display: '-webkit-box',
 };
 
 const leftStyle = {
-  flexGrow: 2,
+  WebkitFlexGrow: 2,
   display: 'inline-block',
 };
 
 const rightStyle = {
-  flexGrow: 1,
+  WebkitFlexGrow: 1,
   display: 'inline-block',
 };
 

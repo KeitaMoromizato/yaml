@@ -4,7 +4,7 @@ import { formStyle, formTextStyle, formWrapperStyle, formLabelStyle } from '../s
 
 const dateOfBirthFormStyle = Object.assign({}, formWrapperStyle, {
   height: '48px',
-  flexGrow: 2,
+  WebkitFlexGrow: 2,
   display: 'inline-block',
 });
 

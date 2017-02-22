@@ -3,7 +3,7 @@ import React from 'react';
 import { formTextStyle, formWrapperStyle } from '../styles';
 
 const style = Object.assign({}, formWrapperStyle, {
-  flexGrow: 2,
+  WebkitFlexGrow: 2,
   display: 'inline-block',
   borderLeft: 'none',
   height: '48px',
