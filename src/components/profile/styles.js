@@ -8,7 +8,7 @@ export const furiganaStyle = {
 export const formStyle = {
   width: '100%',
   padding: '8px',
-  fontSize: '1.6em',
+  fontSize: '1.3em',
 };
 
 export const formTextStyle = {
@@ -16,7 +16,6 @@ export const formTextStyle = {
 };
 
 export const formWrapperStyle = {
-  marginTop: '8px',
   border: '1px solid #000',
   borderBottom: 'none',
 };

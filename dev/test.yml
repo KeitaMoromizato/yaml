@@ -3,3 +3,7 @@ resume:
     name:
       kana: 'ほげほげ'
       name: 'ふがふが'
+    dateOfBirth:
+      year: 1990
+      month: 11
+      date: 30

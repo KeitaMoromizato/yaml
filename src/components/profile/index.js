@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Name from './name';
+import DateOfBirth from './dateOfBirth';
 
 const wrapperStyle = {
   width: '100%',
@@ -42,6 +43,7 @@ export default props => (
 
       <Name {...props.name} />
       <div>
+        <DateOfBirth {...props.dateOfBirth} />
 
       </div>
     </div>
