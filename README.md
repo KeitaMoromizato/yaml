@@ -3,10 +3,6 @@
 - Component Design
 - Test?
 
-//import pdf from 'html-pdf';
 
-/*
-    pdf.create(html).toFile(outFile, (err, data) => {
-      console.log(data.filename);
-    });
-*/
+html-to-pdf使えない
+http://jxck.hatenablog.com/entry/20111102/1320230249
