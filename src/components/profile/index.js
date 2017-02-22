@@ -3,11 +3,11 @@ import React from 'react';
 import Name from './name';
 
 const wrapperStyle = {
-  width: '100%'
+  width: '100%',
 };
 
 const leftStyle = {
-  width: `${120 * 3- 2}px`,
+  width: `${(120 * 3) - 2}px`,
   display: 'inline-block',
 };
 
@@ -41,6 +41,9 @@ export default props => (
       <p style={dateStyle}>{dateString} 現在</p>
 
       <Name {...props.name} />
+      <div>
+
+      </div>
     </div>
 
     <div style={rightStyle}>
