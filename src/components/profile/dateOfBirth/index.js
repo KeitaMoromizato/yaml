@@ -2,6 +2,12 @@ import React from 'react';
 
 import { formStyle, formTextStyle, formWrapperStyle, formLabelStyle } from '../styles';
 
+const dateOfBirthFormStyle = Object.assign({}, formWrapperStyle, {
+  width: '295px',
+  float: 'left',
+  height: '48px',
+});
+
 const culcOld = (birth) => {
   const now = new Date();
   const year = now.getFullYear() - birth.year;
@@ -16,7 +22,7 @@ export default (props) => {
   const birthText = `${props.year}年${props.month}月${props.date}日 (満${culcOld(props)}才)`;
 
   return (
-    <div style={formWrapperStyle}>
+    <div style={dateOfBirthFormStyle}>
       <div style={formStyle}>
         <p style={formTextStyle}><span style={formLabelStyle}>生年月日</span>{birthText}</p>
       </div>

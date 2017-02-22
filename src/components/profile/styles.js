@@ -1,14 +1,14 @@
 export const furiganaStyle = {
   width: '100%',
   borderBottom: '1px dotted #888',
-  fontSize: '0.6em',
+  fontSize: '0.4em',
   padding: '4px',
 };
 
 export const formStyle = {
   width: '100%',
   padding: '8px',
-  fontSize: '1.3em',
+  fontSize: '1em',
 };
 
 export const formTextStyle = {
@@ -21,5 +21,5 @@ export const formWrapperStyle = {
 };
 
 export const formLabelStyle = {
-  fontSize: '0.6em',
+  fontSize: '0.4em',
 };
