@@ -8,3 +8,7 @@ resume:
       month: 11
       date: 30
     gender: '男'
+    address:
+      kana: 'トウキョウト'
+      post: '111-1111'
+      address: '東京都'

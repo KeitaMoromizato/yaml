@@ -4,6 +4,7 @@ import Name from './name';
 import DateOfBirth from './dateOfBirth';
 import Gender from './gender';
 import Picture from './picture';
+import Address from './address';
 
 const wrapperStyle = {
   width: '100%',
@@ -54,6 +55,8 @@ export default props => (
           <DateOfBirth {...props.dateOfBirth} />
           <Gender gender={props.gender} />
         </div>
+
+        <Address {...props.address} />
       </div>
 
       <div style={rightStyle}>
