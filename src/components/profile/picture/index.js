@@ -2,8 +2,8 @@ import React from 'react';
 
 const pictureContainerStyle = {
   padding: 'auto',
-  marginTop: '35px',
-  height: '82px',
+  marginTop: '36px',
+  height: '80px',
 };
 
 const pictureStyle = {
@@ -11,6 +11,7 @@ const pictureStyle = {
   height: `${36 * 2}px`,
   border: '1px dotted #000',
   margin: 'auto',
+  boxSizing: 'border-box',
 };
 
 export default props => (
