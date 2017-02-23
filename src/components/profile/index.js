@@ -5,6 +5,7 @@ import DateOfBirth from './dateOfBirth';
 import Gender from './gender';
 import Picture from './picture';
 import Address from './address';
+import Tel from './tel';
 
 const wrapperStyle = {
   width: '100%',
@@ -57,10 +58,13 @@ export default props => (
         </div>
 
         <Address {...props.address} />
+        <Address {...props.subAddress} />
       </div>
 
       <div style={rightStyle}>
         <Picture />
+        <Tel tel={props.tel} />
+        <Tel tel={props.subTel} />
       </div>
     </div>
   </div>

@@ -6,12 +6,12 @@ const style = Object.assign({}, formWrapperStyle, {
   WebkitFlexGrow: 2,
   display: 'inline-block',
   borderLeft: 'none',
-  height: '48px',
+  height: '32px',
 });
 
 const textStyle = Object.assign({}, formTextStyle, {
   margin: 'auto',
-  lineHeight: '48px',
+  lineHeight: '32px',
   textAlign: 'center',
 });
 

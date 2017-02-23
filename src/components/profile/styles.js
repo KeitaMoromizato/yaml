@@ -1,18 +1,20 @@
 export const furiganaStyle = {
+  height: '16px',
+  lineHeight: '16px',
   width: '100%',
   borderBottom: '1px dotted #888',
   fontSize: '0.4em',
-  padding: '4px',
+  paddingLeft: '4px',
 };
 
 export const formStyle = {
   width: '100%',
-  padding: '8px',
   fontSize: '1em',
 };
 
 export const formTextStyle = {
   margin: 0,
+  paddingLeft: '4px',
 };
 
 export const formWrapperStyle = {

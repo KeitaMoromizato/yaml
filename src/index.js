@@ -5,12 +5,24 @@ import { renderToString } from 'react-dom/server';
 
 import Resume from './resume';
 
+const wrapper = html => `
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+${html}
+</body>
+</html>
+`;
+
 module.exports = (yamlFile) => {
   try {
     const doc = yaml.safeLoad(fs.readFileSync(yamlFile, 'utf8'));
     const html = renderToString(<Resume {...doc.resume} />);
 
-    return html;
+    return wrapper(html);
   } catch (e) {
     throw e;
   }

@@ -3,9 +3,13 @@ import React from 'react';
 import { formStyle, formTextStyle, formWrapperStyle, formLabelStyle } from '../styles';
 
 const dateOfBirthFormStyle = Object.assign({}, formWrapperStyle, {
-  height: '48px',
+  height: '32px',
   WebkitFlexGrow: 2,
   display: 'inline-block',
+});
+
+const dateOfBirthTextStyle = Object.assign({}, formTextStyle, {
+  lineHeight: '32px',
 });
 
 const culcOld = (birth) => {
@@ -24,7 +28,7 @@ export default (props) => {
   return (
     <div style={dateOfBirthFormStyle}>
       <div style={formStyle}>
-        <p style={formTextStyle}><span style={formLabelStyle}>生年月日</span>{birthText}</p>
+        <p style={dateOfBirthTextStyle}><span style={formLabelStyle}>生年月日</span>{birthText}</p>
       </div>
     </div>
   );
