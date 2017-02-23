@@ -4,6 +4,7 @@ import { furiganaStyle, formStyle, formTextStyle, formWrapperStyle } from '../st
 
 const postStyle = Object.assign({}, furiganaStyle, {
   borderBottom: 'none',
+  margin: 0,
 });
 
 export default props => (
