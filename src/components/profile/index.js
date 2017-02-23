@@ -10,7 +10,7 @@ const wrapperStyle = {
 };
 
 const flexContainerStyle = {
-  display: '-webkit-box',
+  display: '-webkit-flex',
 };
 
 const leftStyle = {

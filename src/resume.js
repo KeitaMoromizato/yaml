@@ -5,6 +5,7 @@ import Profile from './components/profile';
 const pageStyle = {
   width: `${257 * 4}px`,
   height: `${182 * 4}px`,
+  background: '#fff',
 };
 
 const blockStyle = {
