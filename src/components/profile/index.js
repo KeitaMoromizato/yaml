@@ -35,9 +35,8 @@ const dateStyle = {
   float: 'right',
   fontSize: '0.6em',
   margin: 0,
-  lineHeight: '1.4em',
-  height: '1.4em',
-  vericalAlign: 'bottom',
+  lineHeight: '34px',
+  height: '34px',
 };
 
 const dateString = (d => `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`)(new Date());

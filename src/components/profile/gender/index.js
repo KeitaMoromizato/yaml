@@ -13,6 +13,7 @@ const textStyle = Object.assign({}, formTextStyle, {
   margin: 'auto',
   lineHeight: '32px',
   textAlign: 'center',
+  paddingLeft: 0,
 });
 
 export default props => (
