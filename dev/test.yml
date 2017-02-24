@@ -13,3 +13,13 @@ resume:
       post: '111-1111'
       address: '東京都'
     tel: 123-4567-8900
+  careers:
+    - year: 2000
+      month: 3
+      content: 'hogehoge学校 卒業'
+    - year: 2000
+      month: 4
+      content: 'piyopiyo株式会社 入社'
+    - year: 2010
+      month: 4
+      content: 'piyopiyo株式会社 退職'

@@ -21,7 +21,7 @@ export default props => (
   <div style={pageStyle}>
     <div style={blockStyle}>
       <Profile {...props.profile} />
-      <Career {...props.career} />
+      <Career careers={props.careers} />
     </div>
 
     <div style={blockStyle}>

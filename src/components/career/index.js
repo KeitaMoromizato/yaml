@@ -10,11 +10,13 @@ const careerTableStyle = {
 
 const rowStyle = {
   height: '32px',
+  borderBottom: '1px solid #000',
 };
 
 const cellStyle = {
   height: '32px',
   lineHeight: '32px',
+  textAlign: 'center',
 };
 
 const yearCellStyle = Object.assign({}, cellStyle, {
@@ -28,16 +30,29 @@ const monthCellStyle = Object.assign({}, cellStyle, {
 });
 
 const dataCellStyle = Object.assign({}, cellStyle, {
+  textAlign: 'left',
+  paddingLeft: '8px',
 });
 
-export default props => (
+const Row = props => (
+  <tr style={rowStyle}>
+    <td style={yearCellStyle}>{props.year}</td>
+    <td style={monthCellStyle}>{props.month}</td>
+    <td style={dataCellStyle}>{props.content}</td>
+  </tr>
+);
+
+export default (props = []) => (
   <table style={careerTableStyle}>
     <tbody>
       <tr style={rowStyle}>
         <th style={yearCellStyle}>年</th>
         <th style={monthCellStyle}>月</th>
-        <th style={dataCellStyle}>学歴・経歴</th>
+        <th style={cellStyle}>学歴・経歴</th>
       </tr>
+
+      {props.careers.map(carrer => <Row {...carrer} />)}
+
     </tbody>
   </table>
 );
