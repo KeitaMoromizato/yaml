@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Profile from './components/profile';
+import Career from './components/career';
 
 const pageStyle = {
   width: `${257 * 4}px`,
@@ -20,6 +21,7 @@ export default props => (
   <div style={pageStyle}>
     <div style={blockStyle}>
       <Profile {...props.profile} />
+      <Career {...props.career} />
     </div>
 
     <div style={blockStyle}>
