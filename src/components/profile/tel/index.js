@@ -8,8 +8,9 @@ const telLabelStyle = Object.assign({}, furiganaStyle, {
 });
 
 const telWrapperStyle = Object.assign({}, formWrapperStyle, {
-  height: `${62}px`,
-  lineHeight: `${62 - 16}px`,
+  height: `${53}px`,
+  lineHeight: `${53 - 16}px`,
+  borderLeft: 'none',
 });
 
 export default props => (

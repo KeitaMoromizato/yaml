@@ -2,7 +2,7 @@ import React from 'react';
 
 const pictureContainerStyle = {
   padding: 'auto',
-  marginTop: '36px',
+  marginTop: '35px',
   height: '80px',
 };
 
