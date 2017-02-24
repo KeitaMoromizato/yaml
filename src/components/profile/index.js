@@ -9,11 +9,14 @@ import Tel from './tel';
 
 const wrapperStyle = {
   width: '100%',
+  borderBottom: '1px solid #000',
+  boxSizing: 'border-box',
 };
 
 const flexContainerStyle = {
   display: '-webkit-flex',
 };
+
 
 const leftStyle = {
   WebkitFlexGrow: 2,
@@ -23,6 +26,10 @@ const leftStyle = {
 const rightStyle = {
   WebkitFlexGrow: 1,
   display: 'inline-block',
+};
+
+const headerContainerStyle = {
+  height: '48px',
 };
 
 const titleStyle = {
@@ -35,8 +42,8 @@ const dateStyle = {
   float: 'right',
   fontSize: '0.6em',
   margin: 0,
-  lineHeight: '34px',
-  height: '34px',
+  lineHeight: '48px',
+  height: '48px',
 };
 
 const dateString = (d => `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`)(new Date());
@@ -45,7 +52,7 @@ export default props => (
   <div style={wrapperStyle}>
     <div style={flexContainerStyle}>
       <div style={leftStyle}>
-        <div>
+        <div style={headerContainerStyle}>
           <h1 style={titleStyle}>履歴書</h1>
           <p style={dateStyle}>{dateString} 現在</p>
         </div>
