@@ -14,7 +14,7 @@ const pictureStyle = {
   boxSizing: 'border-box',
 };
 
-export default props => (
+export default () => (
   <div style={pictureContainerStyle}>
     <div style={pictureStyle}>
     </div>

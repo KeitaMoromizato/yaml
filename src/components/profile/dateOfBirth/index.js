@@ -17,7 +17,7 @@ const culcOld = (birth) => {
   const year = now.getFullYear() - birth.year;
 
   const beforeBirthDay = (now.getMonth() + 1 < birth.month) ||
-    ((now.getMonth() + 1 == birth.month) && (now.getDate() < birth.date));
+    ((now.getMonth() + 1 === birth.month) && (now.getDate() < birth.date));
 
   return beforeBirthDay ? year - 1 : year;
 };

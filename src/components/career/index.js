@@ -9,13 +9,13 @@ const careerTableStyle = {
 };
 
 const rowStyle = {
-  height: '32px',
+  height: '24px',
   borderBottom: '1px solid #000',
 };
 
 const cellStyle = {
-  height: '32px',
-  lineHeight: '32px',
+  height: '24px',
+  lineHeight: '24px',
   textAlign: 'center',
 };
 
@@ -42,7 +42,7 @@ const Row = props => (
   </tr>
 );
 
-export default (props = []) => (
+export default props => (
   <table style={careerTableStyle}>
     <tbody>
       <tr style={rowStyle}>
@@ -51,7 +51,7 @@ export default (props = []) => (
         <th style={cellStyle}>学歴・経歴</th>
       </tr>
 
-      {props.careers.map(carrer => <Row {...carrer} />)}
+      {Array.from(Array(16)).map((carrer, i) => <Row {...(props.careers[i] || {})} />)}
 
     </tbody>
   </table>

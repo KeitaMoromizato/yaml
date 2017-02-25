@@ -27,4 +27,5 @@ export const formWrapperStyle = {
 
 export const formLabelStyle = {
   fontSize: '0.4em',
+  marginRight: '16px',
 };

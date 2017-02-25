@@ -13,10 +13,14 @@ const telWrapperStyle = Object.assign({}, formWrapperStyle, {
   borderLeft: 'none',
 });
 
+const telTextStyle = Object.assign({}, formTextStyle, {
+  textAlign: 'center',
+});
+
 export default props => (
   <div style={telWrapperStyle}>
     <p style={telLabelStyle}>電話</p>
-    <p style={formTextStyle}>
+    <p style={telTextStyle}>
       {props.tel}
     </p>
   </div>

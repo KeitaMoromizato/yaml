@@ -9,7 +9,7 @@ const postStyle = Object.assign({}, furiganaStyle, {
 
 const addressFormStyle = Object.assign({}, formStyle, {
   height: '36px',
-  padding: '4px',
+  padding: '2px',
 });
 
 const addressTextStyle = Object.assign({}, formTextStyle, {
