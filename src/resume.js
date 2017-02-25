@@ -21,10 +21,11 @@ export default props => (
   <div style={pageStyle}>
     <div style={blockStyle}>
       <Profile {...props.profile} />
-      <Career careers={props.careers} />
+      <Career careers={props.careers.slice(0, 16)} rowCount={16} />
     </div>
 
     <div style={blockStyle}>
+      <Career careers={props.careers.slice(16)} rowCount={6} />
     </div>
   </div>
 );

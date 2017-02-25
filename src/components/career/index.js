@@ -3,7 +3,6 @@ import React from 'react';
 const careerTableStyle = {
   width: '100%',
   border: '1px solid #000',
-  borderTop: 'none',
   boxSizing: 'border-box',
   borderCollapse: 'collapse',
 };
@@ -51,7 +50,7 @@ export default props => (
         <th style={cellStyle}>学歴・経歴</th>
       </tr>
 
-      {Array.from(Array(16)).map((carrer, i) => <Row {...(props.careers[i] || {})} />)}
+      {Array.from(Array(props.rowCount)).map((carrer, i) => <Row {...(props.careers[i] || {})} />)}
 
     </tbody>
   </table>
