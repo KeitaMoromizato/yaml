@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Profile from './components/profile';
-import Career from './components/career';
+import List from './components/list';
 
 const pageStyle = {
   width: `${257 * 4}px`,
@@ -17,15 +17,23 @@ const blockStyle = {
   float: 'left',
 };
 
+const appealBlock = {
+  marginTop: '48px',
+};
+
 export default props => (
   <div style={pageStyle}>
     <div style={blockStyle}>
       <Profile {...props.profile} />
-      <Career careers={props.careers.slice(0, 16)} rowCount={16} />
+      <List items={props.careers.slice(0, 16)} rowCount={16} title="学歴・経歴" />
     </div>
 
     <div style={blockStyle}>
-      <Career careers={props.careers.slice(16)} rowCount={6} />
+      <List items={props.careers.slice(16)} rowCount={6} title="学歴・経歴" />
+
+      <div style={appealBlock}>
+        <List items={props.licenses} rowCount={7} title="免許・資格" />
+      </div>
     </div>
   </div>
 );

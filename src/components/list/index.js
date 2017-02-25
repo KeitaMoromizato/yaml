@@ -1,6 +1,6 @@
 import React from 'react';
 
-const careerTableStyle = {
+const tableStyle = {
   width: '100%',
   border: '1px solid #000',
   boxSizing: 'border-box',
@@ -42,15 +42,15 @@ const Row = props => (
 );
 
 export default props => (
-  <table style={careerTableStyle}>
+  <table style={tableStyle}>
     <tbody>
       <tr style={rowStyle}>
         <th style={yearCellStyle}>年</th>
         <th style={monthCellStyle}>月</th>
-        <th style={cellStyle}>学歴・経歴</th>
+        <th style={cellStyle}>{props.title}</th>
       </tr>
 
-      {Array.from(Array(props.rowCount)).map((carrer, i) => <Row {...(props.careers[i] || {})} />)}
+      {Array.from(Array(props.rowCount)).map((_, i) => <Row {...(props.items[i] || {})} />)}
 
     </tbody>
   </table>

@@ -23,3 +23,10 @@ resume:
     - year: 2010
       month: 4
       content: 'piyopiyo株式会社 退職'
+  licenses:
+    - year: 2010
+      month: 4
+      content: 'ITパスポート 合格'
+    - year: 2014
+      month: 12
+      content: 'MOS 合格'
