@@ -2,6 +2,7 @@ import React from 'react';
 
 import Profile from './components/profile';
 import List from './components/list';
+import Appeals from './components/appeals';
 
 const pageStyle = {
   width: `${257 * 4}px`,
@@ -17,8 +18,15 @@ const blockStyle = {
   float: 'left',
 };
 
-const appealBlock = {
+const bottomBlock = {
   marginTop: '48px',
+  boxSizing: 'border-box',
+};
+
+const appealBlock = {
+  boxSizing: 'border-box',
+  border: '1px solid #000',
+  height: '128px',
 };
 
 export default props => (
@@ -31,8 +39,11 @@ export default props => (
     <div style={blockStyle}>
       <List items={props.careers.slice(16)} rowCount={6} title="学歴・経歴" />
 
-      <div style={appealBlock}>
+      <div style={bottomBlock}>
         <List items={props.licenses} rowCount={7} title="免許・資格" />
+        <div style={appealBlock}>
+          <Appeals appeals={props.appeals} />
+        </div>
       </div>
     </div>
   </div>
