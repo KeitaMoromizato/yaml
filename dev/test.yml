@@ -33,3 +33,9 @@ resume:
   appeals:
     - 'ほげほげ'
     - 'フガフガ'
+  commuteTime:
+    - hour: 1
+    - minutes: 30
+  dependant: 2
+  spouse: true
+  supportingDuty: true

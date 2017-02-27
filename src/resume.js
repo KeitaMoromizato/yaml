@@ -3,6 +3,7 @@ import React from 'react';
 import Profile from './components/profile';
 import List from './components/list';
 import Appeals from './components/appeals';
+import CommuteTime from './components/communteTime';
 
 const pageStyle = {
   width: `${257 * 4}px`,
@@ -29,6 +30,12 @@ const appealBlock = {
   height: '128px',
 };
 
+const familyBlock = {
+  boxSizing: 'border-box',
+  border: '1px solid #000',
+  height: '128px',
+};
+
 export default props => (
   <div style={pageStyle}>
     <div style={blockStyle}>
@@ -43,6 +50,9 @@ export default props => (
         <List items={props.licenses} rowCount={7} title="免許・資格" />
         <div style={appealBlock}>
           <Appeals appeals={props.appeals} />
+        </div>
+        <div style={familyBlock}>
+          <CommuteTime {...props.commuteTime} />
         </div>
       </div>
     </div>
