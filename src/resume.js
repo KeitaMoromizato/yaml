@@ -3,7 +3,7 @@ import React from 'react';
 import Profile from './components/profile';
 import List from './components/list';
 import Appeals from './components/appeals';
-import CommuteTime from './components/communteTime';
+import CommuteTime from './components/commuteTime';
 
 const pageStyle = {
   width: `${257 * 4}px`,
@@ -17,6 +17,7 @@ const blockStyle = {
   border: '1px solid #888',
   padding: '16px',
   float: 'left',
+  background: '#fff',
 };
 
 const bottomBlock = {
