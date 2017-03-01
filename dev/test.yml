@@ -34,12 +34,12 @@ resume:
     - 'ほげほげ'
     - 'フガフガ'
   commuteTime:
-    - hour: 1
-    - minutes: 30
+    hour: 1
+    minutes: 30
   family:
-    - dependant: 2
-      spouse: true
-      supportingDuty: true
+    dependant: 2
+    spouse: true
+    supportingDuty: true
   options:
     - "hogehoge"
     - "hugahuga"

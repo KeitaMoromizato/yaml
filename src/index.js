@@ -10,6 +10,12 @@ const wrapper = html => `
 <html lang="ja">
 <head>
   <meta charset="utf-8">
+  <style>
+  html, body {
+    padding: 0;
+    margin: 0;
+  }
+  </style>
 </head>
 <body>
 ${html}

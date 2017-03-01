@@ -15,7 +15,6 @@ const labelStyle = {
 
 const wrapperStyle = {
   height: '100%',
-  width: '312px',
   borderRight: '1px solid #000',
   boxSizing: 'border-box',
 };

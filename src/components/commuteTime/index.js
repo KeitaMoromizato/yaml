@@ -6,9 +6,15 @@ const labelStyle = {
   margin: 0,
 };
 
+const formTextStyle = {
+  margin: 0,
+  marginRight: '16px',
+  textAlign: 'right',
+};
+
 const wrapperStyle = {
-  height: '100%',
-  width: '104px',
+  height: '40px',
+  width: '100%',
   boxSizing: 'border-box',
   borderBottom: '1px solid #000',
 };
@@ -16,6 +22,6 @@ const wrapperStyle = {
 export default props => (
   <div style={wrapperStyle}>
     <p style={labelStyle}>通勤時間</p>
-    <p>{props.hour}時間{props.minutes}分</p>
+    <p style={formTextStyle}>{props.hour || '0'}時間&#09;{props.minutes}分</p>
   </div>
 );

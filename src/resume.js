@@ -25,18 +25,22 @@ const blockStyle = {
 const bottomBlock = {
   marginTop: '48px',
   boxSizing: 'border-box',
+  display: '-webkit-flex',
+  WebkitFlexWrap: 'wrap',
 };
 
 const appealBlock = {
   boxSizing: 'border-box',
   border: '1px solid #000',
-  height: '128px',
+  height: '120px',
+  width: '280px',
 };
 
 const familyBlock = {
   boxSizing: 'border-box',
   border: '1px solid #000',
-  height: '128px',
+  height: '120px',
+  width: '200px',
 };
 
 export default props => (
@@ -51,16 +55,19 @@ export default props => (
 
       <div style={bottomBlock}>
         <List items={props.licenses} rowCount={7} title="免許・資格" />
+
         <div style={appealBlock}>
           <Appeals appeals={props.appeals} />
         </div>
+
         <div style={familyBlock}>
           <CommuteTime {...props.commuteTime} />
           <Family {...props.family} />
         </div>
-
-        <Options options={props.options} />
       </div>
+
+      <Options options={props.options} rowCount={5} />
+
     </div>
   </div>
 );
