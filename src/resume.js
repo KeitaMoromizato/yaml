@@ -5,6 +5,7 @@ import List from './components/list';
 import Appeals from './components/appeals';
 import CommuteTime from './components/commuteTime';
 import Family from './components/family';
+import Options from './components/options';
 
 const pageStyle = {
   width: `${257 * 4}px`,
@@ -57,6 +58,8 @@ export default props => (
           <CommuteTime {...props.commuteTime} />
           <Family {...props.family} />
         </div>
+
+        <Options options={props.options} />
       </div>
     </div>
   </div>

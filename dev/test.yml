@@ -40,3 +40,6 @@ resume:
     - dependant: 2
       spouse: true
       supportingDuty: true
+  options:
+    - "hogehoge"
+    - "hugahuga"
