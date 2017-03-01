@@ -36,6 +36,7 @@ resume:
   commuteTime:
     - hour: 1
     - minutes: 30
-  dependant: 2
-  spouse: true
-  supportingDuty: true
+  family:
+    - dependant: 2
+      spouse: true
+      supportingDuty: true
