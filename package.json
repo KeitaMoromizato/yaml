@@ -10,6 +10,7 @@
     "build": "babel src --out-dir lib",
     "build:watch": "babel src --out-dir lib --watch",
     "debug": "npm run build:watch & nodemon dev/server.js --ignore src/ ",
+    "prepublish": "npm run build",
     "lint": "eslint src/**"
   },
   "keywords": [],

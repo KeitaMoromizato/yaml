@@ -1,17 +1,17 @@
 resume:
   profile:
     name:
-      kana: 'ほげほげ'
-      name: 'ふがふが'
+      kana: 'ほげほげ たろう'
+      name: 'hogehoge 太郎'
     dateOfBirth:
-      year: 1990
-      month: 11
-      date: 30
+      year: 2000
+      month: 1
+      date: 1
     gender: '男'
     address:
-      kana: 'トウキョウト'
+      kana: 'トウキョウト シブヤク '
       post: '111-1111'
-      address: '東京都'
+      address: '東京都 渋谷区 xxxxx 1-1-1'
     tel: 123-4567-8900
     picture:
       path: ./dev/icon.jpg
@@ -33,8 +33,8 @@ resume:
       month: 12
       content: 'MOS 合格'
   appeals:
-    - 'ほげほげ'
-    - 'フガフガ'
+    - 'React/Angular/Vueができます。ジェイクエリーはできません'
+    - 'お金はいっぱいほしいです'
   commuteTime:
     hour: 1
     minutes: 30
@@ -43,5 +43,4 @@ resume:
     spouse: true
     supportingDuty: true
   options:
-    - "hogehoge"
-    - "hugahuga"
+    - '雇ってください'

@@ -1,0 +1,12 @@
+.git
+./.gitignore
+
+node_modules
+npm-debug.log
+.DS_STORE
+
+.config
+dev
+src
+.babelrc
+.eslintrc
