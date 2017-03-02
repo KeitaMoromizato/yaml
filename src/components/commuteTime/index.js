@@ -17,6 +17,7 @@ const wrapperStyle = {
   width: '100%',
   boxSizing: 'border-box',
   borderBottom: '1px solid #000',
+  borderRight: '1px solid #000',
 };
 
 export default props => (

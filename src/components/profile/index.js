@@ -9,7 +9,6 @@ import Tel from './tel';
 
 const wrapperStyle = {
   width: '100%',
-  borderBottom: '1px solid #000',
   boxSizing: 'border-box',
 };
 

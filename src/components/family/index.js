@@ -22,10 +22,13 @@ const formTextStyle = {
 const fullStyle = {
   width: '100%',
   borderBottom: '1px solid #000',
+  borderRight: '1px solid #000',
 };
 
 const smallStyle = {
   width: '50%',
+  borderRight: '1px solid #000',
+  boxSizing: 'border-box',
 };
 
 export default props => (

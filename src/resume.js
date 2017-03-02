@@ -31,14 +31,14 @@ const bottomBlock = {
 
 const appealBlock = {
   boxSizing: 'border-box',
-  border: '1px solid #000',
+  borderRight: '1px solid #000',
+  borderLeft: '1px solid #000',
   height: '120px',
   width: '280px',
 };
 
 const familyBlock = {
   boxSizing: 'border-box',
-  border: '1px solid #000',
   height: '120px',
   width: '200px',
 };

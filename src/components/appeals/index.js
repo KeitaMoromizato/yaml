@@ -15,8 +15,6 @@ const labelStyle = {
 
 const wrapperStyle = {
   height: '100%',
-  borderRight: '1px solid #000',
-  boxSizing: 'border-box',
 };
 
 export default props => (
