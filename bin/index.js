@@ -1,7 +1,7 @@
 const phantom = require('phantom');
 const argv = require('minimist')(process.argv.slice(2));
 
-const yaml2resume = require('./lib');
+const yaml2resume = require('../lib');
 
 const yamlFile = argv._[0];
 const outFile = argv.o || 'resume.pdf';

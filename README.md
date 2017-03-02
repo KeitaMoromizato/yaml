@@ -1,4 +1,6 @@
 # TODO
 
-- devのリファクタ
-- packagejsonのbin
+- sample書く
+- README
+- preinstall
+- npmignore

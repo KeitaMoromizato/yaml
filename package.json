@@ -2,7 +2,10 @@
   "name": "yaml2resume",
   "version": "0.1.0",
   "description": "Generate Resume from yaml",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "bind": {
+    "y2r": "./bin/index.js"
+  },
   "scripts": {
     "build": "babel src --out-dir lib",
     "build:watch": "babel src --out-dir lib --watch",
