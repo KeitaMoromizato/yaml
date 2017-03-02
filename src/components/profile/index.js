@@ -68,7 +68,7 @@ export default props => (
       </div>
 
       <div style={rightStyle}>
-        <Picture />
+        <Picture {...props.picture} />
         <Tel tel={props.tel} />
         <Tel tel={props.subTel} />
       </div>

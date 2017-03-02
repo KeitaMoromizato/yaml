@@ -13,6 +13,8 @@ resume:
       post: '111-1111'
       address: '東京都'
     tel: 123-4567-8900
+    picture:
+      path: ./dev/icon.jpg
   careers:
     - year: 2000
       month: 3

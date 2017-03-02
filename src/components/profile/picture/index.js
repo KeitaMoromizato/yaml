@@ -1,22 +1,30 @@
 import React from 'react';
+import { readFileSync } from 'fs';
 
 const pictureContainerStyle = {
   height: `${48 + 80}px`,
   display: '-webkit-flex',
-  justifyContent: 'center',
+  WebkitJustifyContent: 'center',
   alignItems: 'center',
 };
 
 const pictureStyle = {
-  width: `${40 * 2}px`,
-  height: `${36 * 2}px`,
+  width: `${80}px`,
+  height: `${80}px`,
+};
+
+const noPictureStyle = {
+  width: `${80}px`,
+  height: `${80}px`,
   border: '1px dotted #000',
   boxSizing: 'border-box',
 };
 
-export default () => (
+export default props => (
   <div style={pictureContainerStyle}>
-    <div style={pictureStyle}>
-    </div>
+    {props.path ?
+      <img src={`data:image/png;base64, ${readFileSync(props.path).toString('base64')}`} alt="" style={pictureStyle} />
+      : <div style={noPictureStyle} />
+    }
   </div>
 );
