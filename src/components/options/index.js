@@ -20,9 +20,9 @@ const cellStyle = {
   paddingLeft: '4px',
 };
 
-const renderRow = row => (
+const Row = props => (
   <tr style={rowStyle}>
-    <td style={cellStyle}>{row}</td>
+    <td style={cellStyle}>{props.row}</td>
   </tr>
 );
 
@@ -32,8 +32,8 @@ export default props => (
       <tr style={rowStyle}>
         <th style={cellStyle}>本人希望記入欄</th>
       </tr>
-    </tbody>
+      {Array.from(Array(props.rowCount)).map((_, i) => <Row key={i} row={props.options[i]} />)}
 
-    {Array.from(Array(props.rowCount)).map((_, i) => renderRow(props.options[i]))}
+    </tbody>
   </table>
 );

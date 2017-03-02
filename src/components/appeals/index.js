@@ -21,7 +21,7 @@ export default props => (
   <div style={wrapperStyle}>
     <p style={labelStyle}>志望動機・アピールポイントなど</p>
     <ul style={listStyle}>
-      {props.appeals.map(appeal => <li>{appeal}</li>)}
+      {props.appeals.map((appeal, i) => <li key={i}>{appeal}</li>)}
     </ul>
   </div>
 );

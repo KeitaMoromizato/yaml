@@ -50,7 +50,7 @@ export default props => (
         <th style={cellStyle}>{props.title}</th>
       </tr>
 
-      {Array.from(Array(props.rowCount)).map((_, i) => <Row {...(props.items[i] || {})} />)}
+      {Array.from(Array(props.rowCount)).map((_, i) => <Row key={i} {...(props.items[i] || {})} />)}
 
     </tbody>
   </table>

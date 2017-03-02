@@ -2,4 +2,3 @@
 
 - devのリファクタ
 - packagejsonのbin
-- react wornng
